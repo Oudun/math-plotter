@@ -9,6 +9,12 @@ import android.graphics.Paint;
 
 public interface Formula {
 
-    public void plot(Canvas canvas, Paint paint);
+    public void plot(FormulaContext context);
+
+    public Function getFunction();
+
+    public void setFunction(Function function);
+
+    public int getSelectedFunction(int x, int y, FormulaContext context);
 
 }
